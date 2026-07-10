@@ -106,6 +106,8 @@ for name, model in models.items():
         best_name = name
 
 joblib.dump(best_model, "models/churn_model.pkl")
+joblib.dump(scaler, "models/scaler.pkl")
+joblib.dump(X.columns.tolist(), "models/columns.pkl")
 
 print("\nBest Model :", best_name)
 
@@ -244,3 +246,5 @@ plt.close()
 
 print("\nImages saved in model_images/")
 print("Model saved in models/")
+print("Scaler saved successfully.")
+print("Training columns saved successfully.")
