@@ -105,7 +105,7 @@ for name, model in models.items():
 
         best_name = name
 
-joblib.dump(best_model, "models/churn_model.pkl")
+joblib.dump(best_model, "models/logistic_regression_model.pkl")
 joblib.dump(scaler, "models/scaler.pkl")
 joblib.dump(X.columns.tolist(), "models/columns.pkl")
 
